@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="containerTitle animate__animated animate__flipInX">
+        <p>Memory Game</p>
+    </div>
+    <div class="containerCards" id="containerCards">
+        <table id="effect" class="animate__animated animate__jackInTheBox">
+            <tr>
+                <td><button id="0" onclick="show(0)">?</button></td>
+                <td><button id="1" onclick="show(1)">?</button></td>
+                <td><button id="2" onclick="show(2)">?</button></td>
+                <td><button id="3" onclick="show(3)">?</button></td>
+            </tr>
+            <tr>
+                <td><button id="4" onclick="show(4)">?</button></td>
+                <td><button id="5" onclick="show(5)">?</button></td>
+                <td><button id="6" onclick="show(6)">?</button></td>
+                <td><button id="7" onclick="show(7)">?</button></td>
+            </tr>
+            <tr>
+                <td><button id="8" onclick="show(8)">?</button></td>
+                <td><button id="9" onclick="show(9)">?</button></td>
+                <td><button id="10" onclick="show(10)">?</button></td>
+                <td><button id="11" onclick="show(11)">?</button></td>
+            </tr>
+            <tr>
+                <td><button id="12" onclick="show(12)">?</button></td>
+                <td><button id="13" onclick="show(13)">?</button></td>
+                <td><button id="14" onclick="show(14)">?</button></td>
+                <td><button id="15" onclick="show(15)">?</button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="containerInfo" >
+        <div class="divMoves animate__animated animate__backInLeft">
+            <p id="showMoves">Moves: 0</p>
+        </div>
+        <div class="divScore animate__animated animate__backInRight">
+            <p id="showScore">Score: 0</p>
+        </div>
+    </div>
+    <div class="containerMe divScore animate__animated animate__backInUp">
+        <p>Made by Laury 🖤</p>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
