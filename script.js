@@ -54,6 +54,11 @@ function show(id){
            
 
             if(score == 8){
+                confetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.6 },
+                  });
                 containerCards = document.getElementById('containerCards');
                 // textWon = document.getElementById('textWon');
                 containerCards.innerHTML= `<div class="containerWon animate__animated animate__flipInX">
